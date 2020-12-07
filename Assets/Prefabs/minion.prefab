@@ -107,13 +107,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2130827408167982489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f16f24496230bc44bb47c0157a7c5402, type: 3}
+  m_Script: {fileID: 11500000, guid: eebf25f9cae11473aae7546176755a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   monsterTransform: {fileID: 0}
   map: {fileID: 0}
-  movementSpeed: 1
-  minionTransform: {fileID: 2130827408167982468}
+  movementSpeed: 0
+  minionTransform: {fileID: 0}
 --- !u!54 &2130827408167982471
 Rigidbody:
   m_ObjectHideFlags: 0
