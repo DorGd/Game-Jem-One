@@ -123,6 +123,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &132281048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 132281049}
+  m_Layer: 0
+  m_Name: '~~~~~~~~~#  OTHER  #~~~~~~~~~     '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &132281049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132281048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &445649068
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 445649069}
   m_Layer: 0
-  m_Name: ~~~~~~~~~#  MANAGERS #~~~~~~~~~ (2)
+  m_Name: '~~~~~~~~~#  LIGHTING  #~~~~~~~~~ '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -234,7 +264,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &667692831
 GameObject:
@@ -246,7 +276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667692832}
   m_Layer: 0
-  m_Name: ~~~~~~~~~#  MANAGERS #~~~~~~~~~ (3)
+  m_Name: '~~~~~~~~~#  MODELS  #~~~~~~~~~ '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -276,7 +306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 926065589}
   m_Layer: 0
-  m_Name: ~~~~~~~~~#  MANAGERS #~~~~~~~~~
+  m_Name: ~~~~~~~~~#  MANAGERS  #~~~~~~~~~
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -294,7 +324,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1140529486
 GameObject:
@@ -306,7 +336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1140529487}
   m_Layer: 0
-  m_Name: ~~~~~~~~~#  MANAGERS #~~~~~~~~~ (4)
+  m_Name: '~~~~~~~~~#  ENVIRONMENT  #~~~~~~~~~    '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -336,7 +366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2115046282}
   m_Layer: 0
-  m_Name: '~~~~~~~~~#  CAMERA #~~~~~~~~~ '
+  m_Name: '~~~~~~~~~#  CAMERA  #~~~~~~~~~ '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
