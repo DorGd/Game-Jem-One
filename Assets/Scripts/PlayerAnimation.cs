@@ -7,6 +7,7 @@ public class PlayerAnimation : MonoBehaviour
 {
     private Animator _anim;
     private int _lastDirection;
+    public Transform firePoint;
     public string[] idleDirection =
     {
         "Player_Idle_N", "Player_Idle_NW", "Player_Idle_W", "Player_Idle_SW", "Player_Idle_S", "Player_Idle_SW",
@@ -34,6 +35,9 @@ public class PlayerAnimation : MonoBehaviour
         {
             directionArray = runDirection;
             _lastDirection = DirectionToIndex(direction);
+            float angle = _lastDirection * 45f;
+            firePoint.eulerAngles = new Vector3(0f,0f, angle);
+            firePoint.position = firePoint.parent.position + new Vector3(Mathf.Cos((angle + 90f )* Mathf.Deg2Rad), Mathf.Sin((angle + 90f) * Mathf.Deg2Rad), 0f) * 0.5f;
         }
         _anim.Play(directionArray[_lastDirection]);
     }
