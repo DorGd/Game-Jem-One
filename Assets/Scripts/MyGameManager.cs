@@ -13,7 +13,6 @@ public class MyGameManager : Singleton<MyGameManager>
     private const int SHOOT_MINION_SCORE = 1;
     private const int LIFE = 1;
     private int points = 0;
-
     private int lives = 3;
 
     
