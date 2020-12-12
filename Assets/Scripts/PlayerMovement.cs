@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("crushed with minion");
             EventManagerScript.Instance.TriggerEvent(EventManagerScript.EVENT__CRUSHED_MINION);
-        
+            
             other.transform.DOScale(0, 1);
             Destroy(other.gameObject,2f);
         }
