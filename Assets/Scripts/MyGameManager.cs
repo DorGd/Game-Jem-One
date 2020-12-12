@@ -60,4 +60,14 @@ public class MyGameManager : Singleton<MyGameManager>
     {
         return points;
     }
+
+    public void onExitClicked()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void onRetryClicked()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
