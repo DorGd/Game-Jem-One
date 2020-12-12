@@ -28,13 +28,13 @@ public class PlayerMovement : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "minion")
+        if (other.gameObject.CompareTag("Minion"))
         {
             Debug.Log("crushed with minion");
             EventManagerScript.Instance.TriggerEvent(EventManagerScript.EVENT__CRUSHED_MINION);
             
             other.transform.DOScale(0, 1);
-            Destroy(other.gameObject);
+            Destroy(other.gameObject,2f);
         }
     }
 }
