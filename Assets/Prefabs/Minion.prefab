@@ -46,10 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebf25f9cae11473aae7546176755a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterTransform: {fileID: 0}
-  map: {fileID: 0}
+  tagToFollow: Monster
   movementSpeed: 0.75
-  minionTransform: {fileID: 8579666405801617502}
 --- !u!212 &8579666405801617500
 SpriteRenderer:
   m_ObjectHideFlags: 0
