@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -22,5 +24,17 @@ public class PlayerMovement : MonoBehaviour
         
         Vector2 direction = new Vector2(_moveH, _moveV);
         FindObjectOfType<PlayerAnimation>().SetDirection(direction);
+    }
+    
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "minion")
+        {
+            Debug.Log("crushed with minion");
+            EventManagerScript.Instance.TriggerEvent(EventManagerScript.EVENT__CRUSHED_MINION);
+        
+            other.transform.DOScale(0, 1);
+            Destroy(other.gameObject);
+        }
     }
 }
