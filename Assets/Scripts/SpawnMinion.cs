@@ -7,8 +7,7 @@ public class SpawnMinion : MonoBehaviour
     [SerializeField] private GameObject minionToSpawn;
     public void Spawn()
     {
-        Instantiate(minionToSpawn, transform.position, transform.rotation);
-        Debug.Log(transform.position.ToString());
+        Instantiate(minionToSpawn, transform.position, Quaternion.identity);
     }
     
     void OnDrawGizmos()

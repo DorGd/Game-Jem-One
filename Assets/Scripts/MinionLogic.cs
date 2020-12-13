@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.Tilemaps;
@@ -16,6 +17,7 @@ public class MinionLogic : MonoBehaviour
         {
             Debug.Log("No transform to follow found, check tag!");
         }
+        transform.DOShakePosition(1f, 0.25f, 5);
     }
 
     // Update is called once per frame

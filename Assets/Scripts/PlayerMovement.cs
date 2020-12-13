@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private float _moveH, _moveV;
 
     [SerializeField] private float moveSpeed = 1f;
-
+    [SerializeField] private float dashForce = 50f;
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -21,6 +21,11 @@ public class PlayerMovement : MonoBehaviour
         _moveH = Input.GetAxis("Horizontal") * moveSpeed;
         _moveV = Input.GetAxis("Vertical") * moveSpeed;
         _rb.velocity = new Vector2(_moveH, _moveV);
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            _rb.AddForce(_rb.velocity.normalized * dashForce,ForceMode2D.Impulse);
+        }
         
         Vector2 direction = new Vector2(_moveH, _moveV);
         FindObjectOfType<PlayerAnimation>().SetDirection(direction);
