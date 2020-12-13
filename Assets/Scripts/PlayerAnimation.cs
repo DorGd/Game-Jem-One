@@ -35,9 +35,9 @@ public class PlayerAnimation : MonoBehaviour
         {
             directionArray = runDirection;
             _lastDirection = DirectionToIndex(direction);
-            float angle = _lastDirection * 45f;
-            firePoint.eulerAngles = new Vector3(0f,0f, angle);
-            firePoint.position = firePoint.parent.position + new Vector3(Mathf.Cos((angle + 90f )* Mathf.Deg2Rad), Mathf.Sin((angle + 90f) * Mathf.Deg2Rad), 0f) * 0.5f;
+            // float angle = _lastDirection * 45f;
+            // firePoint.eulerAngles = new Vector3(0f,0f, angle);
+            // firePoint.position = firePoint.parent.position + new Vector3(Mathf.Cos((angle + 90f )* Mathf.Deg2Rad), Mathf.Sin((angle + 90f) * Mathf.Deg2Rad), 0f) * 0.5f;
         }
         _anim.Play(directionArray[_lastDirection]);
     }

@@ -590,6 +590,34 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4657586503083574919, guid: fdcea558145ec42c886d515babcda533, type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 1436878904}
+    - target: {fileID: 4657586503374967008, guid: fdcea558145ec42c886d515babcda533, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657586503374967009, guid: fdcea558145ec42c886d515babcda533, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657586503374967009, guid: fdcea558145ec42c886d515babcda533, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657586503374967009, guid: fdcea558145ec42c886d515babcda533, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657586503374967009, guid: fdcea558145ec42c886d515babcda533, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657586503374967009, guid: fdcea558145ec42c886d515babcda533, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdcea558145ec42c886d515babcda533, type: 3}
 --- !u!1001 &1111354661
@@ -6090,6 +6118,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bc5240b0bcbd154eb6f79eed765f6a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1436878904 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4657586503374967009, guid: fdcea558145ec42c886d515babcda533, type: 3}
+  m_PrefabInstance: {fileID: 1042533347}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1495363402
 GameObject:
   m_ObjectHideFlags: 0
@@ -6647,6 +6680,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7691685430820526292, guid: 969cfcd098ec94ec5870b4366b7ba514, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 969cfcd098ec94ec5870b4366b7ba514, type: 3}

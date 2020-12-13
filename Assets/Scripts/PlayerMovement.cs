@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float dashForce = 50f;
+    public Transform firePoint;
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -20,17 +21,30 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        _moveH = Input.GetAxis("Horizontal") * moveSpeed;
-        _moveV = Input.GetAxis("Vertical") * moveSpeed;
-        _rb.velocity = new Vector2(_moveH, _moveV);
+        _moveH = Input.GetAxis("Horizontal");
+        _moveV = Input.GetAxis("Vertical");
+        if (_moveH != 0 && _moveV != 0)
+        {
+            _moveV /= 2;
+        }
+        Vector2 direction = new Vector2(_moveH, _moveV);
+        direction = Vector2.ClampMagnitude(direction,1);
+        
+        if (_moveH != 0 || _moveV != 0)
+        {
+            Vector3 pos = transform.position;
+            firePoint.position = pos +  new Vector3(direction.x, direction.y, 0f).normalized * 0.5f;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
+            firePoint.eulerAngles = new Vector3(0f, 0f,angle );
+        }
+        
+        _rb.velocity = direction * moveSpeed;
         
         // Dash movement
         if (Input.GetKeyDown(KeyCode.B))
         {
             _rb.AddForce(_rb.velocity.normalized * dashForce,ForceMode2D.Impulse);
         }
-        
-        Vector2 direction = new Vector2(_moveH, _moveV);
         _playerAnimation.SetDirection(direction);
     }
     
