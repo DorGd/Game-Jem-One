@@ -25,8 +25,16 @@ public class BattleManager : MonoBehaviour
         {
             foreach (var wave in waveArray)
             {
-                wave.Update();
+                if (wave.Update()) // return true only if last wave 
+                {
+                    _state = BattleState.BossFight;
+                } 
             }    
+        } 
+        else if (_state == BattleState.BossFight)
+        {
+            //waking up the monster and make her jump
+            
         }
     }
 
@@ -41,8 +49,10 @@ public class BattleManager : MonoBehaviour
     {
         [SerializeField] private float timer;
         [SerializeField] private SpawnMinion[] spawnerArray;
+
+        public bool lastWave;
         
-        public void Update()
+        public bool Update()
         {
             if (timer > 0)
             {
@@ -50,8 +60,13 @@ public class BattleManager : MonoBehaviour
                 if (timer <= 0)
                 {
                     SpawnMinions();
+                    if (lastWave)
+                    {
+                        return true;
+                    }
                 }
             }
+            return false;
         }
         
         private void SpawnMinions()

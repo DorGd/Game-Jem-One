@@ -14,6 +14,7 @@ public class EventManagerScript : Singleton<EventManagerScript>
 
     public const string EVENT__SHOOT_MINION = "event_shootMinion";
     public const string EVENT__CRUSHED_MINION = "event_crushedMinion";
+    public const string EVENT__FINISHED_WAVE = "event_finishedWave";
 
     private Dictionary <string, FloatEvent> eventDictionary;
 	
