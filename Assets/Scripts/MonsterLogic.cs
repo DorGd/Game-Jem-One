@@ -8,7 +8,7 @@ using DG.Tweening;
 public class MonsterLogic : MonoBehaviour
 {
     private int power = 0;
-    
+    [SerializeField] private Transform player;
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Minion"))
