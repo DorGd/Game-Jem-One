@@ -8,6 +8,8 @@ public class BattleManager : MonoBehaviour
 {
     [SerializeField] private BattleTrigger battleTrigger;
     [SerializeField] private Wave[] waveArray;
+
+    public event Action onBossFightTrigger;
     private BattleState _state;
     
     private enum BattleState
@@ -34,7 +36,9 @@ public class BattleManager : MonoBehaviour
         else if (_state == BattleState.BossFight)
         {
             //waking up the monster and make her jump
-            
+			Debug.Log("starting boss fight");
+			onBossFightTrigger?.Invoke(); 
+			_state = BattleState.Idle;
         }
     }
 
@@ -62,6 +66,7 @@ public class BattleManager : MonoBehaviour
                     SpawnMinions();
                     if (lastWave)
                     {
+						Debug.Log("last wave entered, gonna start the boss fight");
                         return true;
                     }
                 }
