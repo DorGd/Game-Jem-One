@@ -17,7 +17,7 @@ public class BeamLogic : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Minion"))
         {
-            EventManagerScript.Instance.TriggerEvent(EventManagerScript.EVENT__SHOOT_MINION);
+            EventManagerScript.Instance.TriggerEvent(EventManagerScript.EVENT__SHOOT_MINION,null);
             other.transform.DOScale(0, 1);
             Destroy(gameObject);
         }

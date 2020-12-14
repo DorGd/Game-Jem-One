@@ -60,12 +60,30 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Minion"))
         {
             Debug.Log("crushed with minion");
-            EventManagerScript.Instance.TriggerEvent(EventManagerScript.EVENT__CRUSHED_MINION);
-         
-            //other.transform.DOScale(0, 1);
+            EventManagerScript.Instance.TriggerEvent(EventManagerScript.EVENT__CRUSHED_MINION,null);
+         	sr.color = new Color(2,0,0);//set this object's red color to 200 percent
+        	StartCoroutine(flickerPlayer());
             Destroy(other.gameObject);
         }
-		sr.color = new Color(2,0,0);//set this object's red color to 200 percent
+		else if(other.gameObject.CompareTag("Boss"))
+		{
+			EventManagerScript.Instance.TriggerEvent(EventManagerScript.EVENT__CRUSHED_MINION,null);
+		    sr.color = new Color(2,0,0);//set this object's red color to 200 percent
+        	StartCoroutine(flickerPlayer());
+		}
+		
 
     }
+
+	IEnumerator flickerPlayer()
+	{
+		Color tmp = sr.color;
+		for(int i =0; i<10;i++)
+		{
+			sr.color = new Color(tmp.r,tmp.g, tmp.b,0);
+         	yield return new WaitForSeconds (0.1f);
+         	sr.color = tmp;
+		 	yield return new WaitForSeconds (0.1f);
+        }
+	}
 }
