@@ -13,8 +13,11 @@ public class MonsterLogic : MonoBehaviour
     [SerializeField] private Transform monsterShadowTransform;
     [SerializeField] private float moveInterval = 3f;
     [SerializeField] private BattleManager battleManager;
+    [SerializeField] private SpriteRenderer sr;
 
 
+
+	public float monsterToShaddowFactor;
     private float scaleBy = 0f;
     public float scaleFactor;
     public bool bossFight;
@@ -68,15 +71,18 @@ public class MonsterLogic : MonoBehaviour
 		{
 			yield return new WaitForSeconds(moveInterval);
 			moveTo = player.position;
-
-			while(Vector3.Distance(monsterShadowTransform.position, moveTo) > 0.1f)
-        	{
-				monsterShadowTransform.position = Vector3.MoveTowards(monsterShadowTransform.position, moveTo,
-            		    10 * Time.deltaTime);
-        		yield return null;
-			}
-		
-			transform.DOJump(moveTo, 3,1,1,false);
+						
+			monsterShadowTransform.position = moveTo;
+			Color tmp = sr.color;
+			for(int i =0; i<5;i++)
+			{
+				sr.color = new Color(tmp.r,tmp.g, tmp.b,0);
+       		  	yield return new WaitForSeconds (0.2f);
+         		sr.color = tmp;
+		 		yield return new WaitForSeconds (0.2f);
+        	}
+			transform.DOJump(moveTo - (Vector3.up*monsterToShaddowFactor), 3,1,1,false);
 		}
 	}
+
 }

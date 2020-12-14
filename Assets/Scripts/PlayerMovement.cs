@@ -62,7 +62,10 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("crushed with minion");
             EventManagerScript.Instance.TriggerEvent(EventManagerScript.EVENT__CRUSHED_MINION,null);
          	sr.color = new Color(2,0,0);//set this object's red color to 200 percent
-        	StartCoroutine(flickerPlayer());
+        	Vector3 newLoc = gameObject.transform.position ;
+			transform.DOJump(newLoc,2,1,1,false);
+
+			StartCoroutine(flickerPlayer());
             Destroy(other.gameObject);
         }
 		else if(other.gameObject.CompareTag("Boss"))
