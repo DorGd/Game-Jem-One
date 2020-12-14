@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     private float _moveH, _moveV;
     private PlayerAnimation _playerAnimation;
 
+    
+    public SpriteRenderer sr;
+
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float dashForce = 50f;
     public Transform firePoint;
@@ -19,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _playerAnimation = FindObjectOfType<PlayerAnimation>();
     }
+
+	
     private void FixedUpdate()
     {
         _moveH = Input.GetAxis("Horizontal");
@@ -39,8 +44,10 @@ public class PlayerMovement : MonoBehaviour
         }
         
         _rb.velocity = direction * moveSpeed;
-        
+        sr.color = Color.Lerp (sr.color,Color.white,Time.deltaTime/1.5f);//slowly linear interpolate. takes about 3 seconds to return to white
+
         // Dash movement
+
         if (Input.GetKeyDown(KeyCode.B))
         {
             _rb.AddForce(_rb.velocity.normalized * dashForce,ForceMode2D.Impulse);
@@ -54,9 +61,11 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("crushed with minion");
             EventManagerScript.Instance.TriggerEvent(EventManagerScript.EVENT__CRUSHED_MINION);
-            
-            other.transform.DOScale(0, 1);
-            Destroy(other.gameObject,2f);
+         
+            //other.transform.DOScale(0, 1);
+            Destroy(other.gameObject);
         }
+		sr.color = new Color(2,0,0);//set this object's red color to 200 percent
+
     }
 }

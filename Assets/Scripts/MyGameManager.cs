@@ -14,6 +14,7 @@ public class MyGameManager : Singleton<MyGameManager>
     private const int LIFE = 1;
     private int points = 0;
     private int lives = 3;
+	private int countToBossFight = 4;
 
     
     /** UI elements **/
@@ -26,10 +27,11 @@ public class MyGameManager : Singleton<MyGameManager>
         EventManagerScript.Instance.StartListening(EventManagerScript.EVENT__SHOOT_MINION, OnShootMinion);
         EventManagerScript.Instance.StartListening(EventManagerScript.EVENT__CRUSHED_MINION, OnCrushMinion);
     }
-    private void OnDisable()
+    private void OnApplicationQuit()
     {
         EventManagerScript.Instance.StopListening(EventManagerScript.EVENT__SHOOT_MINION, OnShootMinion);
         EventManagerScript.Instance.StopListening(EventManagerScript.EVENT__CRUSHED_MINION, OnCrushMinion);
+        //EventManagerScript.Instance.StopListening(EventManagerScript.EVENT__FINISHED_WAVE, OnFinishedWave);
     }
 
     private void OnShootMinion(object obj)
@@ -68,4 +70,13 @@ public class MyGameManager : Singleton<MyGameManager>
     {
         SceneManager.LoadScene(1);
     }
+
+	//private void onFinishedWave()
+	//{
+	//	countToBossFight --;
+	//	if (countToBossFight == 0)
+	//	{
+	//		//monster waking up animation
+	//	}
+	//}
 }
