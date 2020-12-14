@@ -11,6 +11,7 @@ public class BattleTrigger : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             onBattleTrigger?.Invoke();
+            gameObject.SetActive(false);
         }
     }
 }
