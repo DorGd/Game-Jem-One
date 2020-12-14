@@ -42,6 +42,18 @@ public class MonsterLogic : MonoBehaviour
             Destroy(other.gameObject,2f);
             transform.DOScale(transform.localScale.y + scaleFactor, 1f); 
         }
+		else
+		{
+			if (gameObject.CompareTag("Boss"))
+			{
+        		transform.DOScale(transform.localScale.y - scaleFactor, 1f); 
+            	EventManagerScript.Instance.TriggerEvent(EventManagerScript.EVENT__MONSTER_HITTED,transform.localScale.y);
+				if( !other.gameObject.CompareTag("Player"))// shooted
+				{
+					Destroy(other.gameObject);
+				}
+			}
+		}
     }
 
 	void StartMove()
@@ -51,6 +63,7 @@ public class MonsterLogic : MonoBehaviour
 
 	IEnumerator MonsterMove()
 	{
+		gameObject.tag = "Boss";
 		while(true)
 		{
 			yield return new WaitForSeconds(moveInterval);

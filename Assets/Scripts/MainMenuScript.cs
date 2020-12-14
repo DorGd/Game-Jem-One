@@ -8,6 +8,8 @@ public class MainMenuScript : MonoBehaviour
     public void playGame()
     {
         SceneManager.LoadScene(1);
+        MyGameManager.Instance.points = 0;
+        MyGameManager.Instance.lives = 3;
     }
 
     public void quitGame()

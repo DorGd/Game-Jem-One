@@ -22,6 +22,8 @@ public class PlayerAnimation : MonoBehaviour
     private void Awake()
     {
         _anim = GetComponent<Animator>();
+        Debug.Log("waken player with score " + MyGameManager.Instance.points);
+
     }
 
     public void SetDirection(Vector2 direction)

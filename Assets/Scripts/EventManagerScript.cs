@@ -15,6 +15,7 @@ public class EventManagerScript : Singleton<EventManagerScript>
     public const string EVENT__SHOOT_MINION = "event_shootMinion";
     public const string EVENT__CRUSHED_MINION = "event_crushedMinion";
     public const string EVENT__FINISHED_WAVE = "event_finishedWave";
+    public const string EVENT__MONSTER_HITTED = "event_monsterHitted";
 
     private Dictionary <string, FloatEvent> eventDictionary;
 	
@@ -50,12 +51,12 @@ public class EventManagerScript : Singleton<EventManagerScript>
 		}
 	}
 	
-	public void TriggerEvent (string eventName)
+	public void TriggerEvent (string eventName, object obj)
 	{
 		FloatEvent thisEvent = null;
 		if (eventDictionary.TryGetValue (eventName, out thisEvent))
 		{
-			thisEvent.Invoke(null);
+			thisEvent.Invoke(obj);
 		}
 	}
 }
