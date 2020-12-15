@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 421788346961835192}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.0445986, y: -0.3669296, z: -0.43363944}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -49,6 +49,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagToFollow: Monster
   movementSpeed: 0.75
+  idleDirection:
+  - Minion_Idle_N
+  - Minion_Idle_NW
+  - Minion_Idle_W
+  - Minion_Idle_SW
+  - Minion_Idle_S
+  - Minion_Idle_SW
+  - Minion_Idle_E
+  - Minion_Idle_NE
 --- !u!212 &421788346961835196
 SpriteRenderer:
   m_ObjectHideFlags: 0

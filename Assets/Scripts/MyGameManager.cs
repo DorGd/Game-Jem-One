@@ -107,7 +107,8 @@ public class MyGameManager : Singleton<MyGameManager>
         if(scoreTXT == null)
             scoreTXT = GameObject.Find("scoreValue").GetComponent<UnityEngine.UI.Text>();
         scoreTXT.text = points.ToString();
-        if (scale <= 0.1f)
+
+        if (scale <= 0.035f)
         {
             win = true;
             SceneManager.LoadScene(2);
