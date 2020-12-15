@@ -22,6 +22,7 @@ public class MyGameManager : Singleton<MyGameManager>
     private GameObject heart3;
 
     public bool win = false;
+    private GameObject player;
 
 
     private void OnEnable()
@@ -29,6 +30,7 @@ public class MyGameManager : Singleton<MyGameManager>
         GameObject go = GameObject.Find("scoreValue");
         if(go != null)
             scoreTXT = go.GetComponent<UnityEngine.UI.Text>();
+        player = GameObject.FindGameObjectsWithTag("Player")[0];
         heart1 = GameObject.Find("heart1") as GameObject;
         heart2 = GameObject.Find("heart2") as GameObject;
         heart3 = GameObject.Find("heart3") as GameObject;
@@ -54,6 +56,8 @@ public class MyGameManager : Singleton<MyGameManager>
     {
         if (lives <= 0)
         {
+            player = GameObject.FindGameObjectsWithTag("Player")[0];
+            player.GetComponent<AudioSource>().Stop();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         else
@@ -91,12 +95,16 @@ public class MyGameManager : Singleton<MyGameManager>
     public void onExitClicked()
     {
         Debug.Log("shani : exit clicked");
+        player = GameObject.FindGameObjectsWithTag("Player")[0];
+        player.GetComponent<AudioSource>().Stop();
         SceneManager.LoadScene(0);
     }
 
     public void onRetryClicked()
     {
         Debug.Log("shani : retry cicked");
+        player = GameObject.FindGameObjectsWithTag("Player")[0];
+        player.GetComponent<AudioSource>().Stop();
         SceneManager.LoadScene(1);
     }
 
@@ -108,9 +116,11 @@ public class MyGameManager : Singleton<MyGameManager>
             scoreTXT = GameObject.Find("scoreValue").GetComponent<UnityEngine.UI.Text>();
         scoreTXT.text = points.ToString();
 
-        if (scale <= 0.035f)
+        if (scale <= 0.05f)
         {
             win = true;
+            player = GameObject.FindGameObjectsWithTag("Player")[0];
+            player.GetComponent<AudioSource>().Stop();
             SceneManager.LoadScene(3);
         }
 

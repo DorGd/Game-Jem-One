@@ -8515,6 +8515,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 51995cc8af126d2419f74c9fd5157afd, type: 3}
+    - target: {fileID: 1892927601781172252, guid: 87a51f154f3bdda4a9a72eee46f2ce2b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -455
+      objectReference: {fileID: 0}
     - target: {fileID: 1892927601781172255, guid: 87a51f154f3bdda4a9a72eee46f2ce2b, type: 3}
       propertyPath: m_Name
       value: heart3
@@ -8531,6 +8535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: heart2
       objectReference: {fileID: 0}
+    - target: {fileID: 1892927602045653787, guid: 87a51f154f3bdda4a9a72eee46f2ce2b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -278
+      objectReference: {fileID: 0}
     - target: {fileID: 2596470708458293395, guid: 87a51f154f3bdda4a9a72eee46f2ce2b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -8543,6 +8551,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UIScript, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 4577556729367768101, guid: 87a51f154f3bdda4a9a72eee46f2ce2b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577556729367768101, guid: 87a51f154f3bdda4a9a72eee46f2ce2b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4814969042821775215, guid: 87a51f154f3bdda4a9a72eee46f2ce2b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -611074998296976189, guid: ce6e52823a9afef44a34d6bdbb3af1c9, type: 3}
+    - target: {fileID: 5034671538589679278, guid: 87a51f154f3bdda4a9a72eee46f2ce2b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5034671538589679278, guid: 87a51f154f3bdda4a9a72eee46f2ce2b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7003517496707923209, guid: 87a51f154f3bdda4a9a72eee46f2ce2b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7179769712006424263, guid: ce6e52823a9afef44a34d6bdbb3af1c9, type: 3}
     - target: {fileID: 7608270021640120259, guid: 87a51f154f3bdda4a9a72eee46f2ce2b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
