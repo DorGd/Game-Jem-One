@@ -23,7 +23,6 @@ public class PlayerMovement : MonoBehaviour
         _playerAnimation = FindObjectOfType<PlayerAnimation>();
     }
 
-	
     private void FixedUpdate()
     {
         _moveH = Input.GetAxis("Horizontal");

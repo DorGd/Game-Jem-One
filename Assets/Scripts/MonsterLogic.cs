@@ -25,13 +25,7 @@ public class MonsterLogic : MonoBehaviour
         battleManager.onBossFightTrigger += StartMove;
     }
 
-    void Update()
-    {
-		
-		
-    }
-    
-
+	
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Minion"))

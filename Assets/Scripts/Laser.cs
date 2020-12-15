@@ -2,33 +2,54 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class Laser : MonoBehaviour
 {
-    [SerializeField] private float defDistRay = 100f;
+    [SerializeField] private float defDistRay = 15f;
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private int fov_left = 25;
+    [SerializeField] private int fov_right = 155;
     private LineRenderer _lineRenderer;
     private Transform _transform;
+    public Transform player;
     private void Awake()
     {
         _lineRenderer = GetComponent<LineRenderer>();
         _transform = GetComponent<Transform>();
     }
-
-    private void Update()
+    
+    IEnumerator LaserScan()
     {
-        ShootLaser();
-    }
-
-    void ShootLaser()
-    {
-        if (Physics2D.Raycast(_transform.position, _transform.right))
+        float distance = 0f;
+        Vector3 direction = player.position - transform.position;
+        float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
+        Debug.Log("ANGLE = " + angle);
+        if (angle < fov_right && angle > fov_left)
         {
-            RaycastHit2D _hit = Physics2D.Raycast(_transform.position, transform.right);
+            while (distance < defDistRay)
+            {
+                ShootLaser(direction, distance);
+                distance += Time.deltaTime * speed;
+                yield return null;
+            }
+            DrawRay2D(_transform.position, _transform.position);
+        }
+    }
+    
+    void ShootLaser(Vector3 direction, float distance)
+    {
+        direction = direction.normalized;
+        Debug.DrawRay(_transform.position, direction * distance, Color.blue);
+        LayerMask mask = LayerMask.GetMask("Player");
+        RaycastHit2D _hit = Physics2D.Raycast(_transform.position, direction, distance , mask);
+        if (_hit)
+        { 
             DrawRay2D(_transform.position, _hit.point);
         }
         else
         {
-            DrawRay2D(_transform.position, _transform.right * defDistRay);
+            DrawRay2D(_transform.position,_transform.position + (direction * distance));
         }
     }
 
