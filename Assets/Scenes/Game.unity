@@ -1026,6 +1026,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 161157621460432284, guid: 5f02e4999fa514b6487aaa4cac5a23dc, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7016455738115076624, guid: 5f02e4999fa514b6487aaa4cac5a23dc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6386,6 +6390,22 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[869].second.m_AllTileFlags
       value: 1073741825
       objectReference: {fileID: 0}
+    - target: {fileID: 7161841959005665692, guid: 5f02e4999fa514b6487aaa4cac5a23dc, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161841959631137937, guid: 5f02e4999fa514b6487aaa4cac5a23dc, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161841960245652734, guid: 5f02e4999fa514b6487aaa4cac5a23dc, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161841960667848765, guid: 5f02e4999fa514b6487aaa4cac5a23dc, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f02e4999fa514b6487aaa4cac5a23dc, type: 3}
 --- !u!1 &1140529486
@@ -8166,7 +8186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5876971531144062089, guid: bd2bfee18b332435ea6b0f025268878a, type: 3}
       propertyPath: waveArray.Array.data[0].lastWave
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5876971531144062089, guid: bd2bfee18b332435ea6b0f025268878a, type: 3}
       propertyPath: waveArray.Array.data[0].spawnerArray.Array.data[2]

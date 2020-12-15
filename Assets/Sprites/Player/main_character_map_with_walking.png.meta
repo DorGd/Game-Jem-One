@@ -89,6 +89,87 @@ TextureImporter:
   - first:
       213: 5900737549147603836
     second: main_character_map_with_walking_28
+  - first:
+      213: -9089321368587728850
+    second: main_character_map_with_walking_0
+  - first:
+      213: -2716885425979149939
+    second: main_character_map_with_walking_1
+  - first:
+      213: -6080528641534023588
+    second: main_character_map_with_walking_2
+  - first:
+      213: 9000998380226207862
+    second: main_character_map_with_walking_8
+  - first:
+      213: -3891818189381138568
+    second: main_character_map_with_walking_9
+  - first:
+      213: 326442927396363857
+    second: main_character_map_with_walking_10
+  - first:
+      213: 5384706994104691888
+    second: main_character_map_with_walking_16
+  - first:
+      213: 4826562208994668686
+    second: main_character_map_with_walking_17
+  - first:
+      213: -2528211927220783998
+    second: main_character_map_with_walking_18
+  - first:
+      213: 5167238931865147928
+    second: main_character_map_with_walking_24
+  - first:
+      213: 8144485294932047156
+    second: main_character_map_with_walking_25
+  - first:
+      213: -906061075260462749
+    second: main_character_map_with_walking_3
+  - first:
+      213: -8480745285042372841
+    second: main_character_map_with_walking_4
+  - first:
+      213: 1720754779894155829
+    second: main_character_map_with_walking_5
+  - first:
+      213: 6085339864517162594
+    second: main_character_map_with_walking_6
+  - first:
+      213: 4568998904599570886
+    second: main_character_map_with_walking_7
+  - first:
+      213: -6373322044752283005
+    second: main_character_map_with_walking_11
+  - first:
+      213: -4035680038510740549
+    second: main_character_map_with_walking_12
+  - first:
+      213: -6850011799257247538
+    second: main_character_map_with_walking_13
+  - first:
+      213: 156815070071909249
+    second: main_character_map_with_walking_14
+  - first:
+      213: -1547031661175229376
+    second: main_character_map_with_walking_15
+  - first:
+      213: 2224771004361967972
+    second: main_character_map_with_walking_19
+  - first:
+      213: 4214805838572049733
+    second: main_character_map_with_walking_20
+  - first:
+      213: 4778301189258983603
+    second: main_character_map_with_walking_21
+  - first:
+      213: -4523338273150627915
+    second: main_character_map_with_walking_22
+  - first:
+      213: -8867945040360487622
+    second: main_character_map_with_walking_23
+  - first:
+      213: 8375526513550640171
+    second: main_character_map_with_walking_26
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -203,19 +284,19 @@ TextureImporter:
       name: main_character_map_with_walking_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 2059
-        width: 363
-        height: 604
+        x: 49
+        y: 4785
+        width: 366
+        height: 606
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f65b0a528758c3c0800000000000000
-      internalID: -4339122023603415306
+      spriteID: e2806ff5f5e3cd180800000000000000
+      internalID: -9089321368587728850
       vertices: []
       indices: 
       edges: []
@@ -224,19 +305,19 @@ TextureImporter:
       name: main_character_map_with_walking_1
       rect:
         serializedVersion: 2
-        x: 577
-        y: 2055
-        width: 315
+        x: 444
+        y: 4780
+        width: 379
         height: 606
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53f6efbc296be1a70800000000000000
-      internalID: 8799671463532457781
+      spriteID: d81b319891fab4ad0800000000000000
+      internalID: -2716885425979149939
       vertices: []
       indices: 
       edges: []
@@ -245,124 +326,19 @@ TextureImporter:
       name: main_character_map_with_walking_2
       rect:
         serializedVersion: 2
-        x: 1077
-        y: 2054
-        width: 353
-        height: 616
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b79486af882e5a460800000000000000
-      internalID: 7252451852894620027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_map_with_walking_3
-      rect:
-        serializedVersion: 2
-        x: 1619
-        y: 2055
-        width: 315
+        x: 876
+        y: 4775
+        width: 364
         height: 606
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5de5cf8c65d515bd0800000000000000
-      internalID: -2643228878969217323
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_map_with_walking_4
-      rect:
-        serializedVersion: 2
-        x: 2061
-        y: 2061
-        width: 362
-        height: 604
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dbd7f3bec6c289620800000000000000
-      internalID: 2781021616216178109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_map_with_walking_5
-      rect:
-        serializedVersion: 2
-        x: 2528
-        y: 2048
-        width: 366
-        height: 613
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4daefed3d26fd1df0800000000000000
-      internalID: -207739333616080172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_map_with_walking_6
-      rect:
-        serializedVersion: 2
-        x: 2995
-        y: 2072
-        width: 354
-        height: 598
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e05206ab811da3370800000000000000
-      internalID: 8303178767147214094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_map_with_walking_7
-      rect:
-        serializedVersion: 2
-        x: 3479
-        y: 2050
-        width: 364
-        height: 614
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6835e151b64592030800000000000000
-      internalID: 3470397806758220678
+      spriteID: c58a6c2aa6f9d9ba0800000000000000
+      internalID: -6080528641534023588
       vertices: []
       indices: 
       edges: []
@@ -371,19 +347,19 @@ TextureImporter:
       name: main_character_map_with_walking_8
       rect:
         serializedVersion: 2
-        x: 10
-        y: 1366
-        width: 378
-        height: 604
+        x: 75
+        y: 3449
+        width: 356
+        height: 619
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 069bd329780d84300800000000000000
-      internalID: 236668261129632096
+      spriteID: 670ef356658f9ec70800000000000000
+      internalID: 9000998380226207862
       vertices: []
       indices: 
       edges: []
@@ -392,19 +368,19 @@ TextureImporter:
       name: main_character_map_with_walking_9
       rect:
         serializedVersion: 2
-        x: 518
-        y: 1368
-        width: 317
-        height: 591
+        x: 497
+        y: 3452
+        width: 355
+        height: 600
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f49f5344ccd60e20800000000000000
-      internalID: 3316580911106987254
+      spriteID: 877888bf9fb7df9c0800000000000000
+      internalID: -3891818189381138568
       vertices: []
       indices: 
       edges: []
@@ -413,124 +389,19 @@ TextureImporter:
       name: main_character_map_with_walking_10
       rect:
         serializedVersion: 2
-        x: 1077
-        y: 1362
-        width: 353
-        height: 601
+        x: 939
+        y: 3456
+        width: 356
+        height: 602
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d48ab55b6c7bb0a0800000000000000
-      internalID: -6864756406554557230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_map_with_walking_11
-      rect:
-        serializedVersion: 2
-        x: 1630
-        y: 1368
-        width: 316
-        height: 591
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d9ad14b795a96dd0800000000000000
-      internalID: -2492278847792371239
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_map_with_walking_12
-      rect:
-        serializedVersion: 2
-        x: 2087
-        y: 1366
-        width: 378
-        height: 604
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bebdead2c94780050800000000000000
-      internalID: 5766987536978074603
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_map_with_walking_13
-      rect:
-        serializedVersion: 2
-        x: 2528
-        y: 1387
-        width: 366
-        height: 610
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9550de0afaa865b70800000000000000
-      internalID: 8887443401586050393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_map_with_walking_14
-      rect:
-        serializedVersion: 2
-        x: 3020
-        y: 1389
-        width: 353
-        height: 596
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42c918ead64fe1c10800000000000000
-      internalID: 2026325634279644196
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_map_with_walking_15
-      rect:
-        serializedVersion: 2
-        x: 3479
-        y: 1370
-        width: 364
-        height: 610
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30bdddbaec3675300800000000000000
-      internalID: 240770844385467139
+      spriteID: 15e16e6ec12c78400800000000000000
+      internalID: 326442927396363857
       vertices: []
       indices: 
       edges: []
@@ -539,19 +410,19 @@ TextureImporter:
       name: main_character_map_with_walking_16
       rect:
         serializedVersion: 2
-        x: 26
-        y: 724
-        width: 362
+        x: 497
+        y: 2118
+        width: 316
         height: 606
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8bdd55d85513b810800000000000000
-      internalID: 1779789749022481293
+      spriteID: 0bceb235b725aba40800000000000000
+      internalID: 5384706994104691888
       vertices: []
       indices: 
       edges: []
@@ -560,19 +431,19 @@ TextureImporter:
       name: main_character_map_with_walking_17
       rect:
         serializedVersion: 2
-        x: 518
-        y: 715
-        width: 317
-        height: 602
+        x: 905
+        y: 2126
+        width: 319
+        height: 590
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a5ee900ee44b9e60800000000000000
-      internalID: 7970039754565543329
+      spriteID: e80b371c1c46bf240800000000000000
+      internalID: 4826562208994668686
       vertices: []
       indices: 
       edges: []
@@ -581,124 +452,19 @@ TextureImporter:
       name: main_character_map_with_walking_18
       rect:
         serializedVersion: 2
-        x: 1077
-        y: 671
-        width: 353
-        height: 601
+        x: 1323
+        y: 2134
+        width: 317
+        height: 608
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bb1de0374ba2b5e0800000000000000
-      internalID: -1895264170917684295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_map_with_walking_19
-      rect:
-        serializedVersion: 2
-        x: 1630
-        y: 715
-        width: 316
-        height: 602
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d6f8e75771e6c700800000000000000
-      internalID: 560383106346448593
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_map_with_walking_20
-      rect:
-        serializedVersion: 2
-        x: 2087
-        y: 724
-        width: 363
-        height: 606
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac85b101a78b30170800000000000000
-      internalID: 8143555385611737290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_map_with_walking_21
-      rect:
-        serializedVersion: 2
-        x: 2528
-        y: 702
-        width: 366
-        height: 613
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 090b6d7774ed38430800000000000000
-      internalID: 3784112510455951504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_map_with_walking_22
-      rect:
-        serializedVersion: 2
-        x: 3020
-        y: 719
-        width: 353
-        height: 595
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6c5e4cdacdb65900800000000000000
-      internalID: 672933873315634286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_map_with_walking_23
-      rect:
-        serializedVersion: 2
-        x: 3479
-        y: 685
-        width: 364
-        height: 613
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f52e9e5cc5c51320800000000000000
-      internalID: 2528144247389824500
+      spriteID: 2847911b5acf9ecd0800000000000000
+      internalID: -2528211927220783998
       vertices: []
       indices: 
       edges: []
@@ -707,19 +473,19 @@ TextureImporter:
       name: main_character_map_with_walking_24
       rect:
         serializedVersion: 2
-        x: 26
-        y: 48
-        width: 362
-        height: 606
+        x: 908
+        y: 753
+        width: 369
+        height: 616
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5de790e65b14b6f50800000000000000
-      internalID: 6875661503602196181
+      spriteID: 81a146b6e68b5b740800000000000000
+      internalID: 5167238931865147928
       vertices: []
       indices: 
       edges: []
@@ -728,19 +494,334 @@ TextureImporter:
       name: main_character_map_with_walking_25
       rect:
         serializedVersion: 2
-        x: 518
-        y: 22
-        width: 317
-        height: 596
+        x: 80
+        y: 62
+        width: 356
+        height: 598
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bca7d35e735a87800800000000000000
-      internalID: 610419408996498123
+      spriteID: 43531d27936070170800000000000000
+      internalID: 8144485294932047156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_map_with_walking_3
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 4785
+        width: 363
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369aa48a0460d63f0800000000000000
+      internalID: -906061075260462749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_map_with_walking_4
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 4145
+        width: 319
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ffa7e98175e4a80800000000000000
+      internalID: -8480745285042372841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_map_with_walking_5
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 4134
+        width: 316
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a8529fa5951e710800000000000000
+      internalID: 1720754779894155829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_map_with_walking_6
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 4129
+        width: 318
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266b1128d58737450800000000000000
+      internalID: 6085339864517162594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_map_with_walking_7
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 4140
+        width: 319
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c96ecfcb48586f30800000000000000
+      internalID: 4568998904599570886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_map_with_walking_11
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 2777
+        width: 366
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38abf5b1e596d87a0800000000000000
+      internalID: -6373322044752283005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_map_with_walking_12
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 2766
+        width: 363
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbbe6d03626ef7c0800000000000000
+      internalID: -4035680038510740549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_map_with_walking_13
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 2769
+        width: 379
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0990ebf8edfe0a0800000000000000
+      internalID: -6850011799257247538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_map_with_walking_14
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 2777
+        width: 364
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b6013b97e1d2200800000000000000
+      internalID: 156815070071909249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_map_with_walking_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 2131
+        width: 318
+        height: 588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0443e5396e6d78ae0800000000000000
+      internalID: -1547031661175229376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_map_with_walking_19
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1448
+        width: 366
+        height: 617
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469859de079ffde10800000000000000
+      internalID: 2224771004361967972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_map_with_walking_20
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1430
+        width: 366
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5455455449ffd7a30800000000000000
+      internalID: 4214805838572049733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_map_with_walking_21
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1417
+        width: 367
+        height: 616
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8bb977d9fef4240800000000000000
+      internalID: 4778301189258983603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_map_with_walking_22
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 724
+        width: 366
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf8de56ecfd931c0800000000000000
+      internalID: -4523338273150627915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_map_with_walking_23
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 737
+        width: 366
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3540ad58fabee480800000000000000
+      internalID: -8867945040360487622
       vertices: []
       indices: 
       edges: []
@@ -749,19 +830,19 @@ TextureImporter:
       name: main_character_map_with_walking_26
       rect:
         serializedVersion: 2
-        x: 1615
-        y: 0
-        width: 331
-        height: 618
+        x: 576
+        y: 70
+        width: 355
+        height: 598
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed800ce8fa1aa4da0800000000000000
-      internalID: -5959773381485131554
+      spriteID: b244d071df8db3470800000000000000
+      internalID: 8375526513550640171
       vertices: []
       indices: 
       edges: []
@@ -770,12 +851,12 @@ TextureImporter:
       name: main_character_map_with_walking_27
       rect:
         serializedVersion: 2
-        x: 2087
-        y: 0
-        width: 368
-        height: 654
+        x: 1066
+        y: 75
+        width: 356
+        height: 597
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

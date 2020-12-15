@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 6255909424099143943}
   - component: {fileID: 7319623722728916783}
   - component: {fileID: -6636894103757781561}
-  m_Layer: 0
-  m_Name: beam
+  m_Layer: 9
+  m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,3 +144,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bef921de78f41a5bd69d424bbadaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitEffect: {fileID: 0}
