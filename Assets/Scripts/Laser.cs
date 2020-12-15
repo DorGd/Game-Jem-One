@@ -62,6 +62,7 @@ public class Laser : MonoBehaviour
         if (_hit)
         { 
             DrawRay2D(_transform.position, _hit.point);
+            EventManagerScript.Instance.TriggerEvent(EventManagerScript.EVENT__CRUSHED_MINION,null);
         }
         else
         {
