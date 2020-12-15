@@ -56,6 +56,7 @@ public class MyGameManager : Singleton<MyGameManager>
         {
             lives = 3;
             points = 0;
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         else

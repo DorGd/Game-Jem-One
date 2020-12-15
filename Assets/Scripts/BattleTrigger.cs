@@ -10,6 +10,7 @@ public class BattleTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            other.GetComponent<AudioSource>().Play();
             onBattleTrigger?.Invoke();
             gameObject.SetActive(false);
         }

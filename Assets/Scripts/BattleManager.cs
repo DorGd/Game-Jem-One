@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
+using DitzeGames.Effects;
+
 
 public class BattleManager : MonoBehaviour
 {
@@ -30,6 +29,9 @@ public class BattleManager : MonoBehaviour
                 if (wave.Update()) // return true only if last wave 
                 {
                     _state = BattleState.BossFight;
+                    CameraEffects.ShakeOnce(3);
+                    gameObject.GetComponents<AudioSource>()[0].Play();
+                    
                 } 
             }    
         } 

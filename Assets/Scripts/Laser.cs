@@ -40,13 +40,15 @@ public class Laser : MonoBehaviour
             rightOffset = 360;
         }
         if (angle > fov_left && angle  < fov_right + rightOffset)
-        {
+        {    
             while (distance < defDistRay)
             {
+                gameObject.GetComponent<AudioSource>().Play();
                 ShootLaser(direction, distance);
                 distance += Time.deltaTime * speed;
                 yield return null;
             }
+            gameObject.GetComponent<AudioSource>().Stop();
             _lineRenderer.positionCount = 0;
         }
     }
