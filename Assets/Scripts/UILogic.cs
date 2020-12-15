@@ -9,7 +9,8 @@ public class UILogic : MonoBehaviour
 {
     // Start is called before the first frame update
     
-    public TextMeshProUGUI winTXT;
+    public GameObject winIMG;
+    public GameObject looseIMG;
     public TextMeshProUGUI scoreTXT;
 
     void Start()
@@ -21,7 +22,9 @@ public class UILogic : MonoBehaviour
     {
         if (MyGameManager.Instance.win)
         {
-            winTXT.text = "winner";
+            //winTXT.text = "winner";
+			winIMG.active = true;
+			looseIMG.active = false;
         }
 
         scoreTXT.text = MyGameManager.Instance.points.ToString();
