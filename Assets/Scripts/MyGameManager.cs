@@ -111,7 +111,7 @@ public class MyGameManager : Singleton<MyGameManager>
         if (scale <= 0.035f)
         {
             win = true;
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
 
     }
