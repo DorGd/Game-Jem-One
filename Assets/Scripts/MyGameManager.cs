@@ -54,8 +54,6 @@ public class MyGameManager : Singleton<MyGameManager>
     {
         if (lives <= 0)
         {
-            lives = 3;
-            points = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         else
@@ -109,11 +107,9 @@ public class MyGameManager : Singleton<MyGameManager>
         if(scoreTXT == null)
             scoreTXT = GameObject.Find("scoreValue").GetComponent<UnityEngine.UI.Text>();
         scoreTXT.text = points.ToString();
-        Debug.Log("shani: scale = " + obj.ToString());
         if (scale <= 0.1f)
         {
             win = true;
-            Debug.Log("shani : event triggered");
             SceneManager.LoadScene(2);
         }
 
