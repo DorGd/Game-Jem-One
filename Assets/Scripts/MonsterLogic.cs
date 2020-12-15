@@ -65,7 +65,7 @@ public class MonsterLogic : MonoBehaviour
 			{
         		transform.DOScale(transform.localScale.y - scaleFactor, 1f); 
             	EventManagerScript.Instance.TriggerEvent(EventManagerScript.EVENT__MONSTER_HITTED,transform.localScale.y);
-				if( !other.gameObject.CompareTag("Player"))// shooted
+				if(!other.gameObject.CompareTag("Player"))// shooted
 				{
 					Destroy(other.gameObject);
 				}

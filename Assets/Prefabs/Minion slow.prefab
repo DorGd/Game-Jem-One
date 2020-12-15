@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 421788346961835198}
   - component: {fileID: 421788346961835193}
   m_Layer: 0
-  m_Name: Minion
+  m_Name: Minion slow
   m_TagString: Minion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagToFollow: Monster
-  movementSpeed: 0.75
+  movementSpeed: 0.5
   idleDirection:
   - Minion_Idle_N
   - Minion_Idle_NW

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 421788346961835198}
   - component: {fileID: 421788346961835193}
   m_Layer: 0
-  m_Name: Minion
+  m_Name: Minion attack
   m_TagString: Minion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 421788346961835192}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.0445986, y: -0.3669296, z: -0.43363944}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -47,8 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebf25f9cae11473aae7546176755a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagToFollow: Monster
-  movementSpeed: 0.75
+  tagToFollow: Player
+  movementSpeed: 0.9
   idleDirection:
   - Minion_Idle_N
   - Minion_Idle_NW
@@ -99,7 +99,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 3434507650894110113, guid: 759df9d56d046e74bbc37e0ffb77f722, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9339623, g: 0.14538093, b: 0.14538093, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

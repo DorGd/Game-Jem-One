@@ -110,7 +110,7 @@ public class MyGameManager : Singleton<MyGameManager>
             scoreTXT = GameObject.Find("scoreValue").GetComponent<UnityEngine.UI.Text>();
         scoreTXT.text = points.ToString();
         Debug.Log("shani: scale = " + obj.ToString());
-        if (scale <= 0.1f)
+        if (scale <= 0.035f)
         {
             win = true;
             Debug.Log("shani : event triggered");
