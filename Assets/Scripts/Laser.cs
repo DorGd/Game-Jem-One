@@ -19,13 +19,27 @@ public class Laser : MonoBehaviour
         _transform = GetComponent<Transform>();
     }
     
-    IEnumerator LaserScan()
+    public IEnumerator LaserScan()
     {
+        _lineRenderer.positionCount = 2;
         float distance = 0f;
         Vector3 direction = player.position - transform.position;
         float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
+        int rightOffset = 0;
         Debug.Log("ANGLE = " + angle);
-        if (angle < fov_right && angle > fov_left)
+        if (angle < 0)
+        {
+            angle += 360f;
+        }
+        if (fov_left > fov_right)
+        {
+            if (angle < fov_right)
+            {
+                angle += 360;
+            }
+            rightOffset = 360;
+        }
+        if (angle > fov_left && angle  < fov_right + rightOffset)
         {
             while (distance < defDistRay)
             {
@@ -33,7 +47,7 @@ public class Laser : MonoBehaviour
                 distance += Time.deltaTime * speed;
                 yield return null;
             }
-            DrawRay2D(_transform.position, _transform.position);
+            _lineRenderer.positionCount = 0;
         }
     }
     
